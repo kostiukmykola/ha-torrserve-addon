@@ -1,14 +1,11 @@
 name: "TorrServe"
 description: "Torrent-to-HTTP server (MatriX). Watch torrents without downloading: exposes /echo, /torrents, /stream API and web UI."
-version: "1.0.0"
+version: "1.0.1"
 slug: "torrserve"
 init: false
 arch:
   - amd64
   - aarch64
-  - armv7
-  - armhf
-  - i386
 startup: services
 boot: auto
 host_network: true
@@ -16,7 +13,7 @@ ports:
   8090/tcp: 8090
 ports_description:
   8090/tcp: "TorrServer web UI and API (8090)"
-webui: "http://[HOST]:[PORT]/"
+webui: "http://[HOST]:[PORT:8090]/"
 panel_icon: "mdi:play-circle"
 homeassistant_api: false
 hassio_api: false
@@ -44,4 +41,3 @@ map:
   - type: share
     read_only: false
 url: "https://github.com/YouROK/TorrServer"
-codenotary: false

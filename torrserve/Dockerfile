@@ -34,5 +34,6 @@ LABEL \
   org.opencontainers.image.title="TorrServe" \
   org.opencontainers.image.description="Torrent-to-HTTP server for Home Assistant" \
   org.opencontainers.image.source="https://github.com/YouROK/TorrServer" \
-  io.hass.type="addon" \
-  io.hass.arch="amd64|aarch64|armv7|armhf|i386"
+  io.hass.version="1.0.1" \
+  io.hass.type="app" \
+  io.hass.arch="amd64|aarch64"

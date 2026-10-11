@@ -1,2 +1,24 @@
-name: "TorrServe: {port}"
-description: "TorrServe torrent-to-HTTP server."
+configuration:
+  port:
+    name: Port
+    description: Web UI and API port
+  http_auth:
+    name: Enable HTTP auth
+    description: Enable --httpauth (login/password required)
+  login:
+    name: Login
+    description: HTTP auth username (stored in accs.db)
+  password:
+    name: Password
+    description: HTTP auth password (stored in accs.db)
+  enable_webdav:
+    name: Enable WebDAV
+    description: Start server with --webdav
+  dont_kill:
+    name: Don't kill on signal
+    description: Start server with --dontkill (-k)
+  torrents_dir:
+    name: Torrents directory
+    description: Path for --torrentsdir
+network:
+  8090/TCP: TorrServer web UI and API
