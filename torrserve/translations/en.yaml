@@ -1,0 +1,2 @@
+name: "TorrServe: {port}"
+description: "TorrServe torrent-to-HTTP server."
