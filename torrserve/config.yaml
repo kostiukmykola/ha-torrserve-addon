@@ -1,6 +1,6 @@
 name: "TorrServe"
 description: "Torrent-to-HTTP server (MatriX). Watch torrents without downloading: exposes /echo, /torrents, /stream API and web UI."
-version: "1.0.2"
+version: "1.0.3"
 slug: "torrserve"
 init: false
 arch:

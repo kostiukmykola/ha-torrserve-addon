@@ -3,7 +3,7 @@
 FROM ghcr.io/home-assistant/base:latest
 
 ARG BUILD_ARCH
-ARG TORRSERVER_VERSION="MatriX.146"
+ARG TORRSERVER_VERSION="MatriX.143"
 
 # Install deps (curl for download, ffmpeg provides ffprobe for /ffp endpoint, bashio already in base)
 RUN apk add --no-cache curl ffmpeg
@@ -34,6 +34,6 @@ LABEL \
   org.opencontainers.image.title="TorrServe" \
   org.opencontainers.image.description="Torrent-to-HTTP server for Home Assistant" \
   org.opencontainers.image.source="https://github.com/YouROK/TorrServer" \
-  io.hass.version="1.0.2" \
+  io.hass.version="1.0.3" \
   io.hass.type="app" \
   io.hass.arch="amd64|aarch64"
